@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:alpine'
-    }
-    
-  }
+  agent any
   stages {
-    stage('') {
+    stage('builds') {
       steps {
         sh 'echo " this is test build" '
       }
